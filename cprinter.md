@@ -1,6 +1,6 @@
 ---
 marp: true
-title: Common Pool Resources
+title: Sustainability of Inter-generational Resources
 theme: default
 class: lead
 paginate: true
@@ -56,7 +56,7 @@ Scientists usually present posters and interactive demonstrations to foster disc
 
 ---
 
-We decided to turn these events into a field lab, by collecting experimental data from the general public.
+We decided to turn these events into a lab-in-the-field, by collecting experimental data from the general public.
 
 - Behavioral and experimental economics often rely on student samples.
 - These events offer a unique opportunity to reach a more diverse population (age, profession, family structure).
@@ -434,7 +434,7 @@ $$
 
 <br>
 
-> In the absence of perceived intragenerational competition, cooperation depends only on a player's personal valuation of future welfare.
+> In the absence of intragenerational competition, cooperation depends only on a player's personal valuation of future welfare.
 
 ---
 
