@@ -41,7 +41,7 @@ style: |
 # Intragenerational Conflict and the Framing of the Future  
 ## *Experimental Evidence on Intergenerational Cooperation*
 
-### Dimitri Dubois 
+**Dimitri Dubois**
 
 📧 dimitri.dubois@umontpellier.fr
 
