@@ -26,6 +26,14 @@ style: |
     color: #777;
   }
 
+  .medium-text {
+    font-size: 0.85em;
+  }
+
+  .small-text {
+    font-size: 0.75em;
+  }
+
 ---
 <!-- _footer: "" -->
 
@@ -56,7 +64,7 @@ Scientists usually present posters and interactive demonstrations to foster disc
 
 ---
 
-We decided to turn these events into a lab-in-the-field, by collecting experimental data from the general public.
+We decided to turn these events into a lab-in-the-field experiment, by collecting experimental data from the general public.
 
 - Behavioral and experimental economics often rely on student samples.
 - These events offer a unique opportunity to reach a more diverse population (age, profession, family structure).
@@ -115,14 +123,15 @@ $\max_{x_1, \dots, x_n} \ \sum_{i=1}^{n} \left(a x_i - b x_i^2 - x_i (c + kX)\ri
 
 ---
 
-### Beyond the Tragedy: Institutions and Collective Action
+### E. Ostrom: Beyond the Tragedy — Institutions and Collective Action
 
-- **E. Ostrom** (1990, *Governing the Commons*) showed that collapse is not inevitable.
-- Field and lab evidence that many communities often create institutions, norms, and rules to manage CPRs sustainably (Ostrom, Walker & Gardner, 1992; Walker et al., 2000).
-  - Key mechanisms:
-    - Communication and shared norms  
-    - Monitoring and graduated sanctions  
-    - Collective choice (voting, self-governance)
+- showed that collapse is not inevitable.
+- Field and lab evidence that many communities often create institutions, norms, and rules to manage CPRs sustainably (Ostrom 1990, Ostrom, Walker & Gardner 1992, Walker et al. 2000).
+
+*Key mechanisms:*
+  - Communication and shared norms  
+  - Monitoring and graduated sanctions  
+  - Collective choice (voting, self-governance)
 
 ---
 
@@ -140,9 +149,22 @@ $\max_{x_1, \dots, x_n} \ \sum_{i=1}^{n} \left(a x_i - b x_i^2 - x_i (c + kX)\ri
 
 ---
 
-### Intergenerational CPR - Literature Review
+### Intergenerational CPR - Related literature
 
+<div class="medium-text">
 
+- **Fischer, Irlenbusch & Sadrieh (2004, JEEM)**
+Intergenerational link raises expectations but not actual cooperation. 
+- **Jacquet et al. (2013, Nature Climate Change)**
+Intergenerational discounting severely undermines cooperation —short-term gains dominate long-term welfare.
+- **Hauser et al. (2014, Nature)**
+Democracy (median voting) sustains cooperation across generations.
+- **Shahrier et al. (2017, Nature Sustainability), Timilsina et al. (2017, PlosOne)**
+Urban (more capitalist) communities show lower intergenerational concern than rural ones.
+- **Chang et al. (2021, Royal Soc. Open Sci.)**
+Material interest in future use of the resource promotes sustainability, but when many others share the resource (high density cues) trust in future benefit drops and extraction rises.
+
+</div>
 
 ---
 
@@ -164,25 +186,6 @@ $\max_{x_1, \dots, x_n} \ \sum_{i=1}^{n} \left(a x_i - b x_i^2 - x_i (c + kX)\ri
 ---
 
 ![h:500px Hauser et al. IGG](img/hauser_igg.png)
-
---- 
-
-### Hauser et al.'s results
-
-- When individuals decide independently, the pool is almost always exhausted.  
-A minority of over-extractors destroys sustainability.
-
-- When decisions are made democratically (median voting), the pool is sustained across generations.
- 
-<br>
-
-⇒ Voting allows:
-- the pro-social majority to overrule selfish players;
-- conditional cooperators to trust others’ intentions.
-
-<br>
-
-> ⇒ Institutions matter — democracy can help cooperate with the future.
 
 ---
 
@@ -227,13 +230,30 @@ We disentangle:
 ### Data collection
 
 - During the 2024 *Nuits des chercheurs* and the 2024 *Fête de la Science*
-- Participants were students and general public.
+- Participants included students and members of the general public.
 - Experiment implemented on tablets.
-- 5 generations (not $\delta$-probabilistic).
-- No interaction between participants, they arrived sequentially → strategy method : participants took decisions for generation 1, generations 2–4, and generation 5 (no future value).
-- Generations constituted ex post, after data collection.
+- 5 generations.
+- Strategy method : participants took decisions for generation 1, generations 2–4, and generation 5 (no future value).
+
+<br>
+
+- Generations were constructed ex post, after individual decisions were collected.
 - Participants were paid according to their extraction decisions, by bank transfer (€ 0.15/unit in 1P and € 0.45/unit in 3P).
-- 260 participants (137 in *1P* and 123 in *3P*).
+
+---
+
+### Participants 
+
+|                     | 1P Treatment    | 3P Treatment    |
+|---------------------|-----------------|-----------------|
+| Participants        | 137             | 123             |
+| Age (mean)          | 30.40           | 32.05           |
+| Gender (male)       | 37.96%          | 39.84%          |
+| Single              | 57.66%          | 56.10%          |
+| With children       | 48.18%          | 49.59%          |
+| Students            | 47.45%          | 38.21%          |
+| Executives          | 29.20%          | 30.89%          |
+
 
 ---
 
@@ -242,7 +262,7 @@ We disentangle:
 
 ![h:450px](img/intra_inter/intra_inter_extractions.png)
 
-⇒ With contemporaries, cooperation collapses (*fisher test p<0.001*).
+⇒ With contemporaries, cooperation collapses (*fisher's exact test p<0.001*).
 
 ---
 
@@ -257,14 +277,21 @@ Distributions are significantly different between the two treatments
 
 |                            | Cooperation | Extraction (%) |
 |----------------------------|-------------|----------------|
-| 1P × Gen 1 (réf.)          | 12.702***   | 0.406***       |
-| 3P vs 1P                   | -4.566*     | 0.126***       |
-| Gen 2–4 vs Gen 1           | -1.840      | -0.027+        |
-| Interaction (3P × Gen 2–4) | 4.688*      | -0.027         |
+| 1P × Gen 1 (réf.)          | 13.015***   | 0.364***       |
+| 3P vs 1P                   | -4.572*     | 0.123***       |
+| Gen 2–4 vs Gen 1           | -1.835      | -0.027+        |
+| Interaction (3P × Gen 2–4) | 4.674*      | -0.027         |
 |                            |             |                |
 | Num.Obs.                   | 520         | 520            |
 
-*Note*: $^+$ p < 0.1, $^{*}$ p < 0.05, $^{**}$ p < 0.01, $^{***}$ p < 0.001
+<div class="medium-text">
+
+*Notes*: 
+$^+$ p < 0.1, $^{*}$ p < 0.05, $^{**}$ p < 0.01, $^{***}$ p < 0.001  
+Control variables: gender, age, num. of children.
+Cooperation: Generalized Linear Mixed Model (GLMM); Extraction: Linear Mixed Model (LMM).
+
+</div>
 
 ---
 
@@ -499,11 +526,13 @@ $$
 
 ### Findings and implications
 
-- **Intragenerational conflict sharply reduces cooperation and resource sustainability**, as shown by lower survival rates of the resource when present.
-- Effective climate and resource governance must tackle both intra- and intergenerational dilemmas: **coordination among contemporaries is as important as concern for future generations**.
-- Addressing these challenges requires a dual strategy:
-  - *Structural mechanisms* (institutions, monitoring) to reduce present-day coordination failures.
-  - *Normative interventions* (future-oriented design, education) to foster long-term sustainability.
+- Intragenerational social dilemmas significantly reduce cooperation with the future and resource sustainability. The presence of contemporaries leads to coordination failures that undermine long-term goals.
+- Effective sustainability policies must address both dimensions:
+  - *Intergenerational dilemmas* (future concern, altruism)
+  - *Intragenerational dilemmas* (trust, coordination, social norms)
+- Policy Implications 
+  - *Structural tools*: institutions, monitoring, and group decision mechanisms to mitigate free-riding among current users.
+  - *Normative tools*: education, nudges, and future-oriented framing to promote concern for long-term outcomes.
 
 ---
 
@@ -513,13 +542,33 @@ $$
 
 ---
 
-## Research Question
+### Research Question
 
-***Can behavioral framings (primings / nudges) restore concern for the future?***
+***Can behavioral framings reduce psychological distance and foster cooperation with future generations?***
 
 ---
 
-## Conceptual distinctions
+### Related literature
+
+- **Kamijo et al. (2017, Sustainability Science)**
+Introducing an Imaginary Future Generation representative makes future interests salient and doubles sustainable choices.
+
+- **Saijo (2020, Sustainability)**
+Proposes the Future Design framework — institutionalizing the idea of “thinking as future generations” to foster long-term sustainability.
+
+---
+
+### From Future Design to Framing the Future
+
+- Kamijo et al. (2017) and Saijo (2020) show that giving future generations a voice — through imaginary future representatives — promotes sustainable choices.
+
+- Our project translates this idea into individual cognitive framings that evoke the future within the decision-maker’s mind.
+
+- We test whether subtle perspective framings can reduce psychological distance and trigger concern for future generations.
+
+---
+
+### Conceptual distinctions
 
 **Priming**: subtle activation of concepts, norms, or emotions that influence later behavior (Bargh 1994, Bargh et al. 1996, Bargh & Chartrand 2000).
 
@@ -527,29 +576,26 @@ $$
 
 **Nudges**: subtle changes in the choice architecture that alter behavior without forbidding options (Thaler & Sunstein, 2008).
 
-
 ---
+
+<div class="small-text">
 
 | | **Priming** | **Framing** | **Nudge** |
 |--|--------------|--------------|------------|
 | **Definition** | Implicit activation of concepts or norms | Explicit presentation shaping interpretation of a choice | Contextual modification steering behavior without constraint |
 | **Cognitive level** | Mostly unconscious | Conscious interpretation | Conscious / semi-conscious |
 | **Focus** | Perception & associations | Meaning & perspective | Actual choice behavior |
-
-
----
-
-|  | **Priming** | **Framing** | **Nudge** |
-|--|-------------|-------------|-----------|
 | **Example** | Reading “future generations” primes prosocial thinking | Framing extraction as “for 2100” or “for your descendants” | Changing default extraction or payoff display |
 | **Discipline** | Cognitive psychology | Cognitive + behavioral economics | Behavioral public policy |
 
 > Framing acts as a **bridge** between priming and nudging:  
-> it shapes *how people think about the choice* rather than *what choices they face.*
+> it changes *how people interpret a choice, rather than what choices they face*.
+
+</div>
 
 ---
 
-### Four Treatments (all in 3P IGG) 
+### Experimental Design: Four Treatments (all in 3P IGG)
 
 ***Different Framing messages***
 
@@ -590,35 +636,62 @@ Future framing ? self-projection
 ### Data collection
 
 - During the 2024 *Nuits des chercheurs* and the 2024 *Fête de la Science* (Montpellier).
-- Participants were students and general public.
+- Participants included students and members of the general public.
 - Experiment implemented on tablets.
-- 5 generations (not $\delta$-probabilistic).
-- No interaction between participants, they arrived sequentially → strategy method : participants took decisions for generation 1, generations 2–4, and generation 5 (no future value).
-- Generations constituted ex post, after data collection.
+- 5 generations.
+- Strategy method : participants took decisions for generation 1, generations 2–4, and generation 5 (no future value).
+- Generations constructed ex post, after individual decisions were collected.
 - Participants were paid according to their extraction decisions, by bank transfer.
+
+---
+
+### Participants
+
+<div class="medium-text">
+
+|                     | Control        | Near future   | Close kin     | Self-projection |
+|---------------------|----------------|---------------|---------------|-----------------|
+| Participants        | 123            | 68            | 69            | 111             |
+| Age (mean)          | 32.05          | 34.99         | 35.94         | 35.50           |
+| Gender (male)       | 39.84%         | 45.59%        | 42.03%        | 45.95%          |
+| Single              | 56.09%         | 60.29%        | 47.83%        | 56.76%          |
+| With children       | 49.59%         | 45.59%        | 49.28%        | 43.24%          |
+| With grandchildren  | 18.03%         | 12.90%        | 2.94%         | 12.50%          |
+| Students            | 38.21%         | 20.59%        | 28.99%        | 34.23%          |
+| Executives          | 30.59%         | 44.12%        | 33.33%        | 36.94%          |
+
+</div>
 
 ---
 
 ### Results
 
-*371 participants (123 in Control, 68 in Near future, 69 in Close kin, 111 in Self-projection).*
-
-![h:425px Extractions by treatment](img/framing/framing_extractions.png)
+![h:500px Extractions by treatment](img/framing/framing_extractions.png)
 
 ---
 
-| Num. Obs. 742 — (371 × 2)  | Cooperation | Extraction (%) |
-|----------------------------|-------------|----------------|
-| No nudge (Gen 1)           | 0.843$^{***}$    | 0.532$^{***}$       |
-| Self projection (Gen 1)    | 0.392       | –0.002         |
-| Close kin (Gen 1)          | –0.017      | –0.012         |
-| Near future (Gen 1)        | 0.697$^{+}$ | –0.071$^{*}$   |
-| No nudge (Gen 2–4)         | 0.333       | –0.054$^{**}$  |
-| Self projection (Gen 2–4)  | 0.009       | 0.002          |
-| Close kin (Gen 2–4)        | 0.503       | –0.026         |
-| Near future (Gen 2–4)      | –0.115      | 0.023          |
+<div class="medium-text">
+
+| Num. Obs. 742 — (371 × 2)  | Cooperation      | Extraction (%) |
+|----------------------------|------------------|----------------|
+| No nudge (Gen 1)           | 9.073$^{***}$    | 0.503$^{***}$  |
+| Self projection (Gen 1)    | 0.514            | –0.007         |
+| Close kin (Gen 1)          | –0.070           | –0.016         |
+| Near future (Gen 1)        | 0.984            | –0.075$^{*}$   |
+| No nudge (Gen 2–4)         | 3.658$^{*}$      | –0.054$^{**}$  |
+| Self projection (Gen 2–4)  | -0.024           | 0.002          |
+| Close kin (Gen 2–4)        | 4.371$^{*}$      | –0.026         |
+| Near future (Gen 2–4)      | –2.237           | 0.023          |
+
+</div>
+
+<div class="small-text">
 
 *Note*: $^+$ p < 0.1, $^{*}$ p < 0.05, $^{**}$ p < 0.01, $^{***}$ p < 0.001
+Control variables: gender, age, num. of children.
+Cooperation: Generalized Linear Mixed Model (GLMM); Extraction: Linear Mixed Model (LMM).
+
+</div>
 
 ---
 
@@ -630,44 +703,9 @@ Future framing ? self-projection
 
 ### Findings and implications
 
-- Framing the future as benefiting the "near future" (up to 2100) significantly increases cooperation and resource sustainability.
+- Framing the future as benefiting the "near future" (up to 2100) increases cooperation and resource sustainability.
 - Framing the future as benefiting "close kin" does not significantly affect cooperation compared to the control.
 - Self-projection does not significantly enhance cooperation compared to the control.
-- Effective communication strategies should emphasize the tangible benefits of sustainable practices for the near future to foster cooperation
-  and long-term resource sustainability.
+- Effective communication strategies should emphasize the tangible benefits of sustainable practices for the near future to foster cooperation and long-term resource sustainability.
 - Future research should explore additional framings and interventions to further enhance cooperation with future generations.
 
----
-
-# Appendix
-
----
-
-## Rational IGG
-
-###  Social Optimum
-
-A benevolent planner maximizes the Total Utility $TU = u_1 + \sum_{g=2}^{\infty} \delta^{g-1} u_{g-1}$  
-
-<small>*where $\delta \in (0, 1)$ is the social discount factor, capturing the planner’s degree of intergenerational altruism.*</small>
-
-$
-\widehat{TU} =
-\begin{cases}
-30 \times \left( \frac{1}{1 - \delta} \right) & \text{if } x_{g} = 30 \text{ for all } g \\
-x_{1} & \text{if } x_{1} > 30
-\end{cases}
-$
-
-⇒ as long as $\delta > 0.5$, the social optimum implies that each generation extracts exactly 30 units, ensuring both optimality and sustainability of the resource
-
----
-
-**For n=1 (1p)**  
-
-- the equilibrium path coincides with the Pareto optimal outcome if $\beta = \delta$.
-- If $\beta \geq \delta > 0.5$, the extraction path is sustainable and optimal. 
-- If $\beta \leq 0.5 < \delta$, the extraction path is non-sustainable and sub-optimal.
-- If $\beta \leq \delta \leq 0.5$ or $\delta \leq \beta \leq 0.5$, the extraction path is optimal but unsustainable.
-
----
