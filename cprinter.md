@@ -41,7 +41,7 @@ style: |
 # Intragenerational Conflict and the Framing of the Future  
 ## *Experimental Evidence on Intergenerational Cooperation*
 
-**Dimitri Dubois**
+Bayle, G., Pinçon, V., Barragan-Jason, G., Bazart, C., Ibanez, L., Roussel, S., Syssau-Vaccarella, A., **Dubois, D.**, Willinger, M.
 
 📧 dimitri.dubois@umontpellier.fr
 
@@ -53,12 +53,11 @@ style: |
 
 ## Context
 
-Two public events:
-
-- *Nuits des chercheurs* (October 2024, Montpellier).
-![h:100px](img/nuit_chercheurs.png)
-- *Fête de la Science* (October 2024, Montpellier).
-![h:100px](img/fete_science.jpg)
+| Three public events                                 |                                    |
+|-----------------------------------------------------|------------------------------------|
+| *Nuits des chercheurs* (October 2024, Montpellier). | ![h:80px](img/nuit_chercheurs.png) |
+| *Festival Va-savoir* (October 2024, Montpellier).   | ![h:80px](img/va_savoir.jpg)       |
+| *Fête de la Science* (October 2024, Montpellier).   | ![h:80px](img/fete_science.jpg)    |
 
 Scientists usually present posters and interactive demonstrations to foster discussions with visitors.
 
@@ -77,7 +76,11 @@ We decided to turn these events into a lab-in-the-field experiment, by collectin
 
 <br>
 
-> ⇒ **We decided to focus on intergenerational common pool resources**.
+> ⇒ **We decided to focus on intergenerational shared resources**.
+
+<br>
+
+<small>*Ethic committee and pre-registration on OSF. (July 2024)*</small>
 
 ---
 
@@ -279,7 +282,7 @@ Distributions are significantly different between the two treatments
 |----------------------------|-------------|----------------|
 | 1P × Gen 1 (réf.)          | 13.015***   | 0.364***       |
 | 3P vs 1P                   | -4.572*     | 0.123***       |
-| Gen 2–4 vs Gen 1           | -1.835      | -0.027+        |
+| Gen 2–4 vs Gen 1           | -1.835      | -0.027         |
 | Interaction (3P × Gen 2–4) | 4.674*      | -0.027         |
 |                            |             |                |
 | Num.Obs.                   | 520         | 520            |
@@ -287,7 +290,7 @@ Distributions are significantly different between the two treatments
 <div class="medium-text">
 
 *Notes*: 
-$^+$ p < 0.1, $^{*}$ p < 0.05, $^{**}$ p < 0.01, $^{***}$ p < 0.001  
+$^{*}$ p < 0.05, $^{**}$ p < 0.01, $^{***}$ p < 0.001  
 Control variables: gender, age, num. of children.
 Cooperation: Generalized Linear Mixed Model (GLMM); Extraction: Linear Mixed Model (LMM).
 
@@ -357,14 +360,14 @@ $
 
 <br>
 
-**n=1 — 1P**  
+**1P (n=1)**  
 
-- If $\beta > 0.5$, the extraction path is sustainable and optimal. 
+- If $\beta > 0.5$, the extraction path is sustainable. 
 - If $\beta \leq 0.5$, the extraction path is non-sustainable.
 
 ---
 
-**n=3 — 3P**
+**3P (n=3)**
 
 Introduce $\hat{x}_{g}^{-i}$ which is player $i$'s belief about the total extraction  of the two other players in his generation.
 
@@ -417,6 +420,26 @@ With farsightedness, as the probability of sustainability decreases, the altruis
 
 ---
 
+- In the one-player case, sustainability requires that intergenerational altruism exceeds a critical threshold — cooperation arises only if $\beta > 0.5$.
+
+- In the three-player case, the same logic applies, but each player must also believe that the next generation will cooperate. The condition becomes $\beta p > 0.5$, where $p$ represents the perceived probability that future generations will sustain the resource.
+⇒ **Even highly altruistic players will defect if they expect others not to cooperate** — beliefs about the future are as important as altruistic preferences.
+
+---
+
+**From rationality to bounded rationality**
+
+- The rational model provides a clear normative benchmark — cooperation is possible if $\beta p > 0.5$ — but it assumes perfect reasoning, common knowledge and accurate beliefs.
+
+- In reality, people’s expectations about others and the future are uncertain, biased, and shaped by simple heuristics rather than full strategic reasoning.
+
+<br>
+
+> ⇒ The rational model tells us when cooperation should occur, but to understand when it actually occurs, we must model how individuals form beliefs and process uncertainty — that’s the goal of our bounded-rationality model.
+
+
+---
+
 #### 2. Boundedly Rational Intergenerational Goods Game (IGG)
 
 $$
@@ -427,25 +450,18 @@ x_{i,g}, & \text{if } X_g > 30
 \end{cases}
 $$
 
-where:
+- $\beta_i \in [0,1]$ is the player's future oriented preference (intergenerational altruism / discount factor).
 
-- $\beta_i \in [0,1]$ is the player's altruism parameter,
-
-- $p_{i} \in [0,1]$ is the player's belief that the other players will cooperate with the future and that the resource will survive to the next generation.
+- $p_{i} \in [0,1]$ is the player's subjective belief that others will cooperate and the resource will survive.
 
 - $V_{g+1} = 30 + \beta_{i,g} \cdot p_{i,g} \cdot V_{g+2}$ ⇒ $V_{g+1} = \frac{30}{1 - \beta_{i,g} p_{i,g}}$
 <small>assuming $X_{g+m} = 30$ $\forall m \geq 1$ and infinite horizon.</small>
 
----
-
 ⇒ $u_{i,g} = x_{i,g} + \beta_{i,g} \cdot p_{i,g} \cdot \frac{30}{1 - \beta_{i,g} p_{i,g}}$
 
-- $\beta_{i,g} \cdot p_{i,g}$ captures the interaction between player $i$'s altruistic preferences and their beliefs about others' cooperativeness. 
-- We refer to it as ***effective altruism***, as it captures the idea that beliefs moderate the expression of altruistic preferences.
-
 ---
 
-**n=1 — 1P**
+**1P (n=1)**
 
 - $p_{i, g}=1$, beliefs about others' cooperation are irrelevant.
 
@@ -461,11 +477,11 @@ $$
 
 <br>
 
-> In the absence of intragenerational competition, cooperation depends only on a player's personal valuation of future welfare.
+> In the absence of intragenerational competition, cooperation depends only on the player's personal valuation of future welfare.
 
 ---
 
-**n=3 — 3P**
+**3P (n=3)**
 
 - Players must form beliefs about others’ behaviors.
 - Cooperation is contingent on altruism and expectations.
@@ -524,15 +540,43 @@ $$
 
 ---
 
+### Bounded-rationality model — Key insights
+
+- Extends the rational benchmark by replacing objective probabilities with **subjective beliefs** about others’ cooperation.
+
+- Players combine intergenerational altruism ($\beta$) and beliefs ($p$) into an effective altruism term.
+
+- Beliefs follow heuristic functions $\phi(z, \alpha)$ capturing **optimistic, neutral, or pessimistic** expectations.
+
+- Stronger altruism ($\beta$) or optimism ($p$) promotes sustainability: **forgiving types cooperate** under uncertainty; **rigid types defect** unless success is almost certain.
+
+<div class="medium-text">
+
+> ⇒ Cooperation may fail not because players are selfish, but because **their beliefs and heuristics distort** how they perceive the future.
+
+</div>
+
+---
+
 ### Findings and implications
 
-- Intragenerational social dilemmas significantly reduce cooperation with the future and resource sustainability. The presence of contemporaries leads to coordination failures that undermine long-term goals.
-- Effective sustainability policies must address both dimensions:
-  - *Intergenerational dilemmas* (future concern, altruism)
-  - *Intragenerational dilemmas* (trust, coordination, social norms)
+- **Intragenerational social dilemmas significantly reduce cooperation** with the future and resource sustainability.
+
+- **Effective sustainability policies** must address both *Intergenerational dilemmas* (future concern, altruism) and *Intragenerational dilemmas* (trust, coordination, social norms).
+
 - Policy Implications 
-  - *Structural tools*: institutions, monitoring, and group decision mechanisms to mitigate free-riding among current users.
-  - *Normative tools*: education, nudges, and future-oriented framing to promote concern for long-term outcomes.
+  - **Structural tools**: institutions, monitoring, and group decision mechanisms to mitigate free-riding among current users.
+  - **Normative tools**: education, nudges, and future-oriented framing to promote concern for long-term outcomes.
+
+---
+
+### Next steps — Back to the lab
+
+- Replicate the field experiment under controlled laboratory conditions to confirm causal mechanisms and rule out contextual confounds.
+
+- Elicit beliefs about future generations’ cooperation to test the theoretical predictions of the rational and bounded-rational models.
+
+- Disentangle the drivers behind extreme future-oriented behaviors: altruism, optimism, coordination motives, or social identity effects?
 
 ---
 
@@ -597,18 +641,14 @@ Proposes the Future Design framework — institutionalizing the idea of “think
 
 ### Experimental Design: Four Treatments (all in 3P IGG)
 
-***Different Framing messages***
+**Control**: No message.  
 
-**Common message (all treatments):** (on the decision screen)
+**Near future and close kin:** (on the decision screen)
 
 > Common resources, such as fish stocks or forests, are renewable — but they can be depleted if not managed sustainably. When we extract too much, these resources cannot regenerate and may disappear permanently.
-
-**Control**: No additional message.  
-
-**Near future** and **Close kin**
 > Adopting responsible practices helps preserve these valuable resources for
-  > — Future generations (up to 2100)
-  > — Your close descendants (up to 2100)
+  > **Near Future**: Future generations (up to 2100)
+  > **Close Kin**: Your close descendants (up to 2100)
 
 ---
 
@@ -622,7 +662,23 @@ They were reminded that they did not know their actual generation (1, 2, 3, 4, o
 
 ---
 
+### Dimensions of Psychological Distance
+
+Framings target different dimensions of distance between the decision-maker and future generations:
+
+ 
+| Treatment           | Targeted dimension    | Mechanism                                     |
+| ------------------- | ----------------------| --------------------------------------------- |
+| **Near Future**     | *Temporal distance*   | Makes the future *feel closer in time*        |
+| **Close Kin**       | *Social distance*     | Makes future people *feel personally related* |      
+| **Self-Projection** | *Self–other distance* | Encourages *empathic perspective-taking*      | 
+
+---
+
 ### Hypotheses
+
+Reducing psychological distance — in time, social ties, or perspective — can activate future concern and foster sustainable decisions.
+
 
 1. **H1:** Framing the future (Near future, Close kin) increases cooperation compared to Control.  
 2. **H2:** Self-projection enhances cooperation by fostering empathy with future generations.
@@ -635,12 +691,9 @@ Future framing ? self-projection
 
 ### Data collection
 
-- During the 2024 *Nuits des chercheurs* and the 2024 *Fête de la Science* (Montpellier).
-- Participants included students and members of the general public.
-- Experiment implemented on tablets.
-- 5 generations.
+- same set-up as previous experiment (5 generations, 3P IGG).
 - Strategy method : participants took decisions for generation 1, generations 2–4, and generation 5 (no future value).
-- Generations constructed ex post, after individual decisions were collected.
+- Generations were constructed ex post, after individual decisions were collected.
 - Participants were paid according to their extraction decisions, by bank transfer.
 
 ---
@@ -674,11 +727,11 @@ Future framing ? self-projection
 
 | Num. Obs. 742 — (371 × 2)  | Cooperation      | Extraction (%) |
 |----------------------------|------------------|----------------|
-| No nudge (Gen 1)           | 9.073$^{***}$    | 0.503$^{***}$  |
+| No framing (Gen 1)         | 9.073$^{***}$    | 0.503$^{***}$  |
 | Self projection (Gen 1)    | 0.514            | –0.007         |
 | Close kin (Gen 1)          | –0.070           | –0.016         |
 | Near future (Gen 1)        | 0.984            | –0.075$^{*}$   |
-| No nudge (Gen 2–4)         | 3.658$^{*}$      | –0.054$^{**}$  |
+| No framing (Gen 2–4)       | 3.658$^{*}$      | –0.054$^{**}$  |
 | Self projection (Gen 2–4)  | -0.024           | 0.002          |
 | Close kin (Gen 2–4)        | 4.371$^{*}$      | –0.026         |
 | Near future (Gen 2–4)      | –2.237           | 0.023          |
@@ -687,7 +740,7 @@ Future framing ? self-projection
 
 <div class="small-text">
 
-*Note*: $^+$ p < 0.1, $^{*}$ p < 0.05, $^{**}$ p < 0.01, $^{***}$ p < 0.001
+*Note*: $^{*}$ p < 0.05, $^{**}$ p < 0.01, $^{***}$ p < 0.001
 Control variables: gender, age, num. of children.
 Cooperation: Generalized Linear Mixed Model (GLMM); Extraction: Linear Mixed Model (LMM).
 
@@ -703,9 +756,12 @@ Cooperation: Generalized Linear Mixed Model (GLMM); Extraction: Linear Mixed Mod
 
 ### Findings and implications
 
-- Framing the future as benefiting the "near future" (up to 2100) increases cooperation and resource sustainability.
-- Framing the future as benefiting "close kin" does not significantly affect cooperation compared to the control.
-- Self-projection does not significantly enhance cooperation compared to the control.
-- Effective communication strategies should emphasize the tangible benefits of sustainable practices for the near future to foster cooperation and long-term resource sustainability.
-- Future research should explore additional framings and interventions to further enhance cooperation with future generations.
+- Framing the future as benefiting the "**near future**" (up to 2100) increases cooperation and resource sustainability.
+
+- Framing the future as benefiting "**close kin**", as well as "**self-projection**", does not significantly affect cooperation compared to the control.
+
+<br>
+
+>- Effective communication strategies should emphasize the tangible benefits of sustainable practices for the near future to foster cooperation and long-term resource sustainability.
+>- Future research should explore additional framings and interventions to further enhance cooperation with future generations.
 
