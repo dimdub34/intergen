@@ -420,6 +420,8 @@ With farsightedness, as the probability of sustainability decreases, the altruis
 
 ---
 
+### Rationality model — Key insights
+
 - In the one-player case, sustainability requires that intergenerational altruism exceeds a critical threshold — cooperation arises only if $\beta > 0.5$.
 
 - In the three-player case, the same logic applies, but each player must also believe that the next generation will cooperate. The condition becomes $\beta p > 0.5$, where $p$ represents the perceived probability that future generations will sustain the resource.
