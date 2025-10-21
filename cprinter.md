@@ -47,7 +47,12 @@ Bayle, G., Pinçon, V., Barragan-Jason, G., Bazart, C., Ibanez, L., Roussel, S.,
 
 *CEE-M, Univ. Montpellier, CNRS, INRAE, Institut Agro.*
 
-![h:150px](img/logos/ceem.png)
+<div style="display:flex;justify-content:center;align-items:center;gap:30px;">
+  <img src="img/logos/ceem.png" height="100">
+  <img src="img/logos/gate.png" height="100">
+  <img src="img/logos/epsylon.png" height="100">
+  <img src="img/logos/sete.jpg" height="100">
+</div>
 
 ---
 
@@ -420,7 +425,7 @@ With farsightedness, as the probability of sustainability decreases, the altruis
 
 ---
 
-### Rationality model — Key insights
+### Rational model — Key insights
 
 - In the one-player case, sustainability requires that intergenerational altruism exceeds a critical threshold — cooperation arises only if $\beta > 0.5$.
 
