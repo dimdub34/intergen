@@ -85,7 +85,7 @@ We decided to turn these events into a lab-in-the-field experiment, by collectin
 
 <br>
 
-<small>*Ethic committee and pre-registration on OSF. (July 2024)*</small>
+<small>*Ethic committee and pre-registration on OSF (July 2024).*</small>
 
 ---
 
