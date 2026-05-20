@@ -32,6 +32,7 @@ format:
             display: none !important;
           }
         </style>
+    output-file: index.html
 ---
 
 # Context
