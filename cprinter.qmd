@@ -648,7 +648,7 @@ The smaller $z$ (greater required sacrifice) the higher player $i$'s altruism, b
 
 #### Extraction decisions in 3P
 
-![](img/intra_inter/extraction_decisions_z.png){height="500"}
+![](img/intra_inter/extraction_decisions_z_4.png){fig-align="center"  height="500"}
 
 ---
 
